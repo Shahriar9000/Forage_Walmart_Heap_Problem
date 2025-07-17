@@ -1,0 +1,19 @@
+public class _TEST_MAX_HEAP_POWER_OF_TWO_ {
+    public static void main(String[] args) {
+        MAX_HEAP_POWER_OF_TWO_ heap = new MAX_HEAP_POWER_OF_TWO_(2); // 2^2 = 4 children
+
+        heap.insert(10);
+        heap.insert(4);
+        heap.insert(8);
+        heap.insert(20);
+        heap.insert(6);
+        heap.insert(25);
+        heap.insert(1);
+        heap.insert(12);
+
+        heap.printHeap();          // View internal structure
+        System.out.println(heap.pop_max()); // 25
+        heap.printHeap();
+        System.out.println(heap.pop_max()); // 20
+    }
+}
